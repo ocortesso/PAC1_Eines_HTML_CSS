@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Pac1 - Eines HTML i CSS</title>
+<link rel="stylesheet" href="./assets/styles/main.scss">
+</head>
+<body>
+  <header>
+<!--Navegació de la plana-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html">
+    <img src="./assets/images/Logo_blau_uoc.png" width="160px" alt="Logo UOC"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./front-end-languages.html" >Llenguatges Front-end</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./package-managers.html">Gestors de paquets</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./module-bundlers.html">Module bundlers</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav> 
+  </header>
+      <div class="container principal"> 
+        <h1>Eines HTML i CSS</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home"></i></a></li>
+              <li class="breadcrumb-item"><a href="./module-bundlers.html">Module bundlers</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Parcel</li>
+            </ol>
+          </nav>
+        <h2>Parcel</h2>
+        <section>
+            <p>Parcel és un agrupador d'aplicacions web diferenciat per la seva experiència de desenvolupador.&nbsp;Ofereix un rendiment ràpid i intens que utilitza processament multicorre i requereix una configuració zero.</p>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DYZTFooDB24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Primer instal·leu Parcel mitjançant npm:</p>
+            <pre>
+                <code>
+                    npm install -g parcel-bundler
+                </code>
+            </pre>
+            
+            <p>Creeu un fitxer package.json al directori del projecte mitjançant:</p>
+            
+            <pre>
+                <code>
+                    npm init -y
+                </code>
+            </pre>
+            
+            <p>El paquet pot prendre qualsevol tipus de fitxer com a punt d’entrada, però un fitxer HTML o JavaScript és un bon lloc per començar.&nbsp;Si enllaceu el fitxer principal de JavaScript al codi HTML mitjançant un camí d'accés relatiu, Parcel també el processarà i substituïu la referència per un URL al fitxer de sortida.</p>
+            
+            <p>A continuació, creeu un fitxer index.html i index.js.</p>
+            
+            <pre>
+                <code>
+                    &lt;html&gt;
+                    &lt;body&gt;
+                    &lt;script src="./index.js"&gt;&lt;/script&gt;
+                     &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+                        
+            <p>NB: El paquet converteix els actius JS en ES5, que no s'executaran en el context d'una&nbsp;&lt;script type="module"&gt;etiqueta, de manera que només cal que utilitzeu&nbsp;&lt;script&gt;etiquetes&nbsp;simples&nbsp;sense&nbsp;typeatributs al codi HTML de la vostra font.</p>
+            
+            <pre>
+                <code>
+                    console.log('hello world')
+                </code>
+            </pre>
+            
+            <p>Parcel té un servidor de desenvolupament integrat, que reconstruirà automàticament l’aplicació a mesura que canvieu d’arxius i admet la&nbsp;<a href="https://en.parceljs.org/hmr.html">substitució de mòduls en calent</a>&nbsp;per a un desenvolupament ràpid.&nbsp;Apunteu-lo al fitxer d’entrada:</p>
+            
+            <pre>
+                <code>
+                    parcel index.html
+                </code>
+            </pre>
+            
+            <p>Ara obriu&nbsp;<a href="http://localhost:1234/">http: // localhost: 1234 /</a>&nbsp;al vostre navegador.&nbsp;Si la substitució del mòdul en calent no funciona, potser haureu de&nbsp;<a href="https://en.parceljs.org/hmr.html#safe-write">configurar l’editor</a>&nbsp;.&nbsp;També podeu substituir el port predeterminat amb l'&nbsp;-p &lt;port number&gt;opció.</p>
+            
+            <p>Feu servir el servidor de desenvolupament quan no tingueu el vostre propi servidor o bé l'aplicació sigui completament client.&nbsp;Si teniu el vostre propi servidor, podeu executar Parcel en&nbsp;watchmode.&nbsp;Això encara es reconstrueix automàticament a mesura que els fitxers canvien i admet la substitució de mòduls en calent, però no inicia un servidor web.</p>
+            
+            <pre>
+                <code>
+                    parcel watch index.html
+                </code>
+            </pre>
+            
+            <p>També podeu utilitzar&nbsp;<a href="https://createapp.dev/parcel">createapp.dev</a>&nbsp;per crear un projecte Parcel al navegador.&nbsp;Seleccioneu les funcions que necessiteu, com ara Reactar, Vue, Typescript i CSS, i veureu que el projecte es genera en temps real.&nbsp;Podeu utilitzar aquesta eina per aprendre a configurar un nou projecte i també podeu descarregar el projecte com a fitxer ZIP i començar a codificar a l'instant.</p>
+            
+        </section>
+      </div>
+<footer>
+  <div class="container">
+    <p id="javascript"></p>
+  </div>
+</footer>
+
+<script src="./assets/scripts/index.js"></script>
+</body>
+</html>

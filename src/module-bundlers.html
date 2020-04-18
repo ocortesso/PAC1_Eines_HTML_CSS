@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Pac1 - Eines HTML i CSS</title>
+<link rel="stylesheet" href="./assets/styles/main.scss">
+</head>
+<body>
+  <header>
+<!--Navegació de la plana-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html">
+    <img src="./assets/images/Logo_blau_uoc.png" width="160px" alt="Logo UOC"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./front-end-languages.html" >Llenguatges Front-end</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./package-managers.html">Gestors de paquets</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./module-bundlers.html">Module bundlers</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav> 
+  </header>
+      <div class="container principal"> 
+
+        <h1>Eines HTML i CSS</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home"></i></a></li>
+              <li class="breadcrumb-item active" aria-current="page">Module bundlers</li>
+            </ol>
+          </nav>
+        <h2>Module bundlers</h2>
+        <div class="card-deck">
+            <div class="card">
+              <a href="./parcel.html"><img src="./assets/images/parcel.jpg" class="card-img-top" alt="Parcel"></a>
+              <div class="card-body">
+                <h5 class="card-title">Parcel</h5>
+                <p class="card-text">Parcel és un agrupador d'aplicacions web diferenciat per la seva experiència de desenvolupador. Ofereix un rendiment ràpid i intens que utilitza processament multicorre i requereix una configuració zero.</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#"><img src="./assets/images/webpack.jpg" class="card-img-top" alt="Webpack"></a>
+              <div class="card-body">
+                <h5 class="card-title">Webpack</h5>
+                <p class="card-text">Webpack és un agrupador de mòduls estàtics per a aplicacions JavaScript modernes. Quan webpack processa la aplicació, construeix internament un mapa de dependències que tots els mòduls que el vostre projecte necessita i genera un o més paquets.</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#"><img src="./assets/images/rollup-fusebox.jpg" class="card-img-top" alt="Altres"></a>
+              <div class="card-body">
+                <h5 class="card-title">Altres</h5>
+                <p class="card-text">Altres exemples són Rollup o Fusebox</p>
+              </div>
+            </div>
+          </div>
+      </div>
+<footer>
+  <div class="container">
+    <p id="javascript"></p>
+  </div>
+</footer>
+
+<script src="./assets/scripts/index.js"></script>
+</body>
+</html>

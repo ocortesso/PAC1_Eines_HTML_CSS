@@ -1,3 +1,5 @@
+import 'bootstrap';
+
 console.log(`Benvingut a la PAC1!`);
 window.addEventListener("load", function() {
     var navegador = "";

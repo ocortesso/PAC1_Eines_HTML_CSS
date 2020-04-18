@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Pac1 - Eines HTML i CSS</title>
+<link rel="stylesheet" href="./assets/styles/main.scss">
+</head>
+<body>
+  <header>
+<!--Navegació de la plana-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html">
+    <img src="./assets/images/Logo_blau_uoc.png" width="160px" alt="Logo UOC"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./front-end-languages.html" >Llenguatges Front-end</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./package-managers.html">Gestors de paquets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./module-bundlers.html">Module bundlers</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav> 
+  </header>
+      <div class="container principal"> 
+
+        <h1>Eines HTML i CSS</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home"></i></a></li>
+              <li class="breadcrumb-item"><a href="./front-end-languages.html">Llenguatges Front-end</a></li>
+              <li class="breadcrumb-item active" aria-current="page">CSS</li>
+            </ol>
+          </nav>
+        <h2>CSS, Cascading Style Sheets</h2>
+        <section>
+            <p><b>Cascading Style Sheets</b> (CSS, en català: <b>Fulls d'Estil en Cascada</b>) és un llenguatge de fulls d'estil utilitzat per descriure la semàntica de presentació (l'aspecte i format) d'un document escrit en un <a href="/wiki/Llenguatge_de_marques" title="Llenguatge de marques">llenguatge de marques</a>. La seva aplicació més comuna és dissenyar pàgines web escrites en <a href="/wiki/HTML" class="mw-redirect" title="HTML">HTML</a> i <a href="/wiki/XHTML" class="mw-redirect" title="XHTML">XHTML</a>, però el llenguatge també pot ser aplicat a qualsevol classe de document XML, incloent-hi <a href="/wiki/SVG" class="mw-redirect" title="SVG">SVG</a> i <a href="/wiki/XUL" title="XUL">XUL</a>.
+            </p>
+            <p>CSS està dissenyat principalment per permetre la separació de contingut del document (escrit en HTML o un llenguatge de marques similar) de la presentació del document, incloent-hi elements com la disposició, colors, i <a href="/wiki/Tipus_(terme_tipogr%C3%A0fic)" class="mw-redirect" title="Tipus (terme tipogràfic)">fonts</a>. Aquesta separació pot millorar l'<a href="/wiki/Accessibilitat" title="Accessibilitat">accessibilitat</a> al contingut, proporcionar més flexibilitat i control en l'especificació de característiques de presentació, permetre que múltiples pàgines comparteixin un format comú, i redueix complexitat i repetició en el contingut estructural (com per exemple al permetre disseny web sense taules). CSS també pot deixar la mateixa pàgina de marques ser presentada en estils diferents mitjançant mètodes de render diferents, com a la pantalla, en impressió, per veu (quan és llegida en veu alta per un navegador amb lector o pantalla lectora) i amb mecanismes <a href="/wiki/Sistema_somatosensorial" title="Sistema somatosensorial">tàctils</a> amb sistemes <a href="/wiki/Braille" title="Braille">Braille</a>. Mentre que l'autor d'un document típicament associa els documents amb un full d'estil CSS, els lectors poden utilitzar un full d'estil diferent, potser un al seu propi ordinador, per invalidar aquell que l'autor ha especificat.
+            </p>
+            <p>CSS especifica un esquema de prioritat per determinar quines regles d'estil s'apliquen si més d'una regla està associada amb un element en particular. En aquests fulls anomentas en cascada, es calculen prioritats o pesos i s'assignen a regles, de manera que els resultats siguin previsibles.
+            </p>
+            <p>Les especificacions CSS són mantingudes pel <a href="/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium</a> (W3C). El tipus de mitja d'Internet (Tipus <a href="/wiki/Multi-Purpose_Internet_Mail_Extensions" title="Multi-Purpose Internet Mail Extensions">MIME</a>) <code>text/css</code> és registrat per a l'ús amb CSS per <a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc2318">RFC 2318</a> (Març de 1998).
+            </p>
+            <h3>Els tres tipus d'estils</h3>
+            <p>CSS proporciona tres camins diferents per aplicar les regles d'estil a una pàgina Web:</p>
+            <ol>
+                <li><b>Un full d'estil extern</b>, que és un full d'estil que està emmagatzemat en un arxiu diferent a l'arxiu on s'emmagatzema el codi HTML de la pàgina web. Aquesta és la manera de programar més potent, perquè separa completament les regles de format per la pàgina HTML de l'estructura bàsica de la pàgina.</li>
+                <li><b>Un full d'estil intern</b>, que és un full d'estil que està incrustat dins d'un document HTML. (Va a la dreta de l'element &lt;head&gt;). D'aquesta manera s'obté el benefici de separar la informació de l'estil, del codi HTML pròpiament dit. Es pot optar per copiar el full d'estil incrustat d'una pàgina a una altra, (aquesta possibilitat és difícil d'executar si es vol per guardar les còpies sincronitzades). En general, l'única vegada que es fa servir un full d'estil intern, és quan es vol proporcionar alguna característica a una pàgina web en un simple fitxer, per exemple, si s'està enviant alguna cosa a la pàgina web.</li>
+                <li><b>Un estil en línia</b>, que és un mètode per insertar el llenguatge d'estil de pàgina directament, dins d'una etiqueta HTML. Aquesta manera de fer no és totalment adequada. L'inserir la descripció del format dins del document de la pàgina web a nivell de codi es converteix en una feina llarga, costosa i poc elegant per resoldre el problema de la programació de la pàgina. Aquest mode de treball es podria usar de manera ocasional si es pretén aplicar un format amb pressa, ràpidament. No és tot senzill o estructurat com hauria de ser, però funciona. Aquest és el mètode recomanat per maquetar correus electrònics en HTML.</li>
+            </ol>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/24gNhTcy6pw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+        </section>
+      </div>
+<footer>
+  <div class="container">
+    <p id="javascript"></p>
+  </div>
+</footer>
+
+<script src="./assets/scripts/index.js"></script>
+</body>
+</html>
