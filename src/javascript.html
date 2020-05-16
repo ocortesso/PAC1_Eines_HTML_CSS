@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Pac1 - Eines HTML i CSS</title>
+<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="./assets/styles/main.scss">
 </head>
 <body>
@@ -13,7 +15,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="./index.html">
-    <img src="./assets/images/Logo_blau_uoc.png" class="logo" alt="Logo UOC"></a> 
+      <img src="./assets/images/Logo.svg" class="logo" alt="Logo PAC"><span>Eines HTML i CSS</span></a> 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,8 +36,6 @@
   </nav> 
   </header>
       <div class="container principal"> 
-
-        <h1>Eines HTML i CSS</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home"></i></a></li>
@@ -43,25 +43,50 @@
               <li class="breadcrumb-item active" aria-current="page">JavaScript</li>
             </ol>
           </nav>
-        <h2>JavaScript</h2>
+        <div class="portada">
+          <picture>
+            <source media="(max-width: 25em)"
+                    srcset="./assets/images/portada-javascript-mobil.jpg">
+          
+            <source media="(max-width: 48em)"
+                    srcset="./assets/images/portada-javascript-ipad.jpg">
+          
+            <img src="./assets/images/portada-javascript.jpg"
+                alt="Portada CSS">
+          
+          </picture>
+        </div>
         <section>
-            <p><strong>JavaScript</strong>&nbsp;és un&nbsp;<a href="https://ca.wikipedia.org/wiki/Llenguatge_script" title="Llenguatge script">llenguatge script</a>&nbsp;basat en objectes implementat originàriament per&nbsp;<a href="https://ca.wikipedia.org/wiki/Netscape_Communications_Corporation" title="Netscape Communications Corporation">Netscape Communications Corporation</a>, i que va derivar en l'estàndard&nbsp;<a href="https://ca.wikipedia.org/wiki/ECMAScript" title="ECMAScript">ECMAScript</a>. És conegut sobretot pel seu ús en&nbsp;<a href="https://ca.wikipedia.org/wiki/P%C3%A0gina_web" title="Pàgina web">pàgines web</a>, però també s'utilitza en altres aplicacions.</p>
+            <p><strong>JavaScript</strong> és un <a href="https://ca.wikipedia.org/wiki/Llenguatge_script" title="Llenguatge script">llenguatge script</a> basat en objectes implementat originàriament per <a href="https://ca.wikipedia.org/wiki/Netscape_Communications_Corporation" title="Netscape Communications Corporation">Netscape Communications Corporation</a>, i que va derivar en l'estàndard <a href="https://ca.wikipedia.org/wiki/ECMAScript" title="ECMAScript">ECMAScript</a>. És conegut sobretot pel seu ús en <a href="https://ca.wikipedia.org/wiki/P%C3%A0gina_web" title="Pàgina web">pàgines web</a>, però també s'utilitza en altres aplicacions.</p>
 
-            <p>Malgrat el seu nom, JavaScript no deriva del&nbsp;<a href="https://ca.wikipedia.org/wiki/Llenguatge_Java" title="Llenguatge Java">llenguatge de programació Java</a>, però tots dos compartixen una sintaxi similar inspirada en el&nbsp;<a href="https://ca.wikipedia.org/wiki/Llenguatge_C" title="Llenguatge C">llenguatge C</a>. Semànticament, JavaScript és més pròxim als llenguatges&nbsp;<a href="https://ca.wikipedia.org/w/index.php?title=Self&amp;action=edit&amp;redlink=1" title="Self (encara no existeix)">Self</a>&nbsp;i&nbsp;<a href="https://ca.wikipedia.org/wiki/ActionScript" title="ActionScript">ActionScript</a>&nbsp;(basat també en l'ECMAScript). El nom "JavaScript" és una marca registrada per Oracle Corporation.</p>
+            <p>Malgrat el seu nom, JavaScript no deriva del <a href="https://ca.wikipedia.org/wiki/Llenguatge_Java" title="Llenguatge Java">llenguatge de programació Java</a>, però tots dos compartixen una sintaxi similar inspirada en el <a href="https://ca.wikipedia.org/wiki/Llenguatge_C" title="Llenguatge C">llenguatge C</a>. Semànticament, JavaScript és més pròxim als llenguatges <a href="https://ca.wikipedia.org/w/index.php?title=Self&amp;action=edit&amp;redlink=1" title="Self (encara no existeix)">Self</a> i <a href="https://ca.wikipedia.org/wiki/ActionScript" title="ActionScript">ActionScript</a> (basat també en l'ECMAScript). El nom "JavaScript" és una marca registrada per Oracle Corporation.</p>
             
             <h3>Característiques</h3>
 
-            <p>És un&nbsp;<a href="https://ca.wikipedia.org/w/index.php?title=Llenguatge_de_programaci%C3%B3_basat_en_objectes&amp;action=edit&amp;redlink=1" title="Llenguatge de programació basat en objectes (encara no existeix)">llenguatge de programació basat en objectes</a>&nbsp;i de guió (també conegut com a&nbsp;<a href="https://ca.wikipedia.org/wiki/Script" title="Script">script</a>) que suporta els principis de&nbsp;<a href="https://ca.wikipedia.org/wiki/Polimorfisme_(programaci%C3%B3)" title="Polimorfisme (programació)">polimorfisme</a>, herència per&nbsp;<a href="https://ca.wikipedia.org/wiki/Delegaci%C3%B3_(programaci%C3%B3)" title="Delegació (programació)">delegació</a>),&nbsp;<a href="https://ca.wikipedia.org/wiki/Abstracci%C3%B3_(inform%C3%A0tica)" title="Abstracció (informàtica)">abstracció</a>&nbsp;i&nbsp;<a href="https://ca.wikipedia.org/wiki/Encapsulaci%C3%B3" title="Encapsulació">encapsulació</a>. És sensible a les&nbsp;<a href="https://ca.wikipedia.org/wiki/Maj%C3%BAscules" title="Majúscules">majúscules</a>&nbsp;i&nbsp;<a href="https://ca.wikipedia.org/wiki/Min%C3%BAscules" title="Minúscules">minúscules</a>, està&nbsp;<a href="https://ca.wikipedia.org/w/index.php?title=Orientat_a_esdeveniments_(Programaci%C3%B3)&amp;action=edit&amp;redlink=1" title="Orientat a esdeveniments (Programació) (encara no existeix)">orientat a esdeveniments</a>&nbsp;(principalment solen implementar-se als botons del&nbsp;<a href="https://ca.wikipedia.org/wiki/Hyper_Text_Markup_Language" title="Hyper Text Markup Language">codi HTML</a>), se sol utilitzar per a generar codi&nbsp;<a href="https://ca.wikipedia.org/wiki/HTML" title="HTML">HTML</a>&nbsp;i és un&nbsp;<a href="https://ca.wikipedia.org/wiki/Llenguatge_de_programaci%C3%B3_interpretat" title="Llenguatge de programació interpretat">llenguatge de programació interpretat</a>.</p>
+            <p><img src="./assets/images/coding.png" style="float:right;width: 25%;min-width: 250px;">És un <a href="https://ca.wikipedia.org/w/index.php?title=Llenguatge_de_programaci%C3%B3_basat_en_objectes&amp;action=edit&amp;redlink=1" title="Llenguatge de programació basat en objectes (encara no existeix)">llenguatge de programació basat en objectes</a> i de guió (també conegut com a <a href="https://ca.wikipedia.org/wiki/Script" title="Script">script</a>) que suporta els principis de <a href="https://ca.wikipedia.org/wiki/Polimorfisme_(programaci%C3%B3)" title="Polimorfisme (programació)">polimorfisme</a>, herència per <a href="https://ca.wikipedia.org/wiki/Delegaci%C3%B3_(programaci%C3%B3)" title="Delegació (programació)">delegació</a>), <a href="https://ca.wikipedia.org/wiki/Abstracci%C3%B3_(inform%C3%A0tica)" title="Abstracció (informàtica)">abstracció</a> i <a href="https://ca.wikipedia.org/wiki/Encapsulaci%C3%B3" title="Encapsulació">encapsulació</a>. És sensible a les <a href="https://ca.wikipedia.org/wiki/Maj%C3%BAscules" title="Majúscules">majúscules</a> i <a href="https://ca.wikipedia.org/wiki/Min%C3%BAscules" title="Minúscules">minúscules</a>, està <a href="https://ca.wikipedia.org/w/index.php?title=Orientat_a_esdeveniments_(Programaci%C3%B3)&amp;action=edit&amp;redlink=1" title="Orientat a esdeveniments (Programació) (encara no existeix)">orientat a esdeveniments</a> (principalment solen implementar-se als botons del <a href="https://ca.wikipedia.org/wiki/Hyper_Text_Markup_Language" title="Hyper Text Markup Language">codi HTML</a>), se sol utilitzar per a generar codi <a href="https://ca.wikipedia.org/wiki/HTML" title="HTML">HTML</a> i és un <a href="https://ca.wikipedia.org/wiki/Llenguatge_de_programaci%C3%B3_interpretat" title="Llenguatge de programació interpretat">llenguatge de programació interpretat</a>.</p>
 
-            <p>Quan s'utilitza com a&nbsp;<a href="https://ca.wikipedia.org/w/index.php?title=Llenguatge_al_costat_del_client&amp;action=edit&amp;redlink=1" title="Llenguatge al costat del client (encara no existeix)">llenguatge al costat del client</a>&nbsp;en l'àmbit web, els scripts s'executen al&nbsp;<a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador web</a>, servint com a extensió de les capacitats del llenguatge de la web HTML.&nbsp;La interacció entre JavaScript, el codi HTML i el&nbsp;<a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador web</a>&nbsp;es fa possible mitjançant un conjunt d'objectes que representen l'estructura d'una pàgina web en forma d'arbre, anomenat&nbsp;<a href="https://ca.wikipedia.org/wiki/Model_d%27Objectes_del_Document" title="Model d'Objectes del Document">Model d'Objectes del Document</a>.</p>
-
+            <p>Quan s'utilitza com a <a href="https://ca.wikipedia.org/w/index.php?title=Llenguatge_al_costat_del_client&amp;action=edit&amp;redlink=1" title="Llenguatge al costat del client (encara no existeix)">llenguatge al costat del client</a> en l'àmbit web, els scripts s'executen al <a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador web</a>, servint com a extensió de les capacitats del llenguatge de la web HTML. La interacció entre JavaScript, el codi HTML i el <a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador web</a> es fa possible mitjançant un conjunt d'objectes que representen l'estructura d'una pàgina web en forma d'arbre, anomenat <a href="https://ca.wikipedia.org/wiki/Model_d%27Objectes_del_Document" title="Model d'Objectes del Document">Model d'Objectes del Document</a>.</p>
+ 
         </section>
       </div>
-<footer>
-  <div class="container">
-    <p id="javascript"></p>
-  </div>
-</footer>
+      <footer>
+        <div class="container">
+          <div class="row">
+          <div class="col- col-md-6 col-sm-4">
+            <h1>Eines HTML i CSS</h1>
+          </div>
+          <div class="autor col- col-md-6 col-sm-8 row">
+            <div class="col- col-md-4 col-sm-5"><img class="protagonista" src="./assets/images/Oscar.jpg"></div>
+            <div class="col- col-md-8 col-sm-7">
+              <p><strong>Oscar Cortés</strong></p>
+              <p>Eines HTML i CSS</p>
+              <p>Màster Universitari en Desenvolupament de llocs i aplicacions web - UOC</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </footer> 
+      
 
 <script src="./assets/scripts/index.js"></script>
 </body>

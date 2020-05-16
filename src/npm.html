@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Pac1 - Eines HTML i CSS</title>
+<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="./assets/styles/main.scss">
 </head>
 <body>
@@ -13,7 +15,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="./index.html">
-      <img src="./assets/images/Logo_blau_uoc.png" class="logo" alt="Logo UOC"></a> 
+      <img src="./assets/images/Logo.svg" class="logo" alt="Logo PAC"><span>Eines HTML i CSS</span></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,8 +36,6 @@
   </nav> 
   </header>
       <div class="container principal"> 
-
-        <h1>Eines HTML i CSS</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home"></i></a></li>
@@ -43,9 +43,21 @@
               <li class="breadcrumb-item active" aria-current="page">npm</li>
             </ol>
           </nav>
-        <h2>npm</h2>
+        <div class="portada">
+          <picture>
+            <source media="(max-width: 25em)"
+                    srcset="./assets/images/portada-npm-mobil.jpg">
+          
+            <source media="(max-width: 48em)"
+                    srcset="./assets/images/portada-npm-ipad.jpg">
+          
+            <img src="./assets/images/portada-npm.jpg"
+                alt="Portada CSS">
+          
+          </picture>
+        </div>
         <section>
-            <p>npm és el registre de programari més gran del món.&nbsp;Els desenvolupadors de codi obert de tots els continents utilitzen npm per compartir i prestar paquets i moltes organitzacions utilitzen npm per gestionar també el desenvolupament privat.</p>
+            <p>npm és el registre de programari més gran del món. Els desenvolupadors de codi obert de tots els continents utilitzen npm per compartir i prestar paquets i moltes organitzacions utilitzen npm per gestionar també el desenvolupament privat.</p>
 
             <p>Aquí teniu una introducció ràpida a npm:</p>
 
@@ -59,18 +71,18 @@
                 <li>el registre</li>
             </ul>
 
-            <p>Utilitzeu el&nbsp;<a href="https://npmjs.com/">lloc web</a>&nbsp;per descobrir paquets, configurar perfils i gestionar altres aspectes de la vostra experiència npm.&nbsp;Per exemple, podeu configurar&nbsp;<a href="https://www.npmjs.com/features">Orgs</a>&nbsp;(organitzacions) per gestionar l'accés a paquets públics o privats.</p>
+            <p>Utilitzeu el <a href="https://npmjs.com/">lloc web</a> per descobrir paquets, configurar perfils i gestionar altres aspectes de la vostra experiència npm. Per exemple, podeu configurar <a href="https://www.npmjs.com/features">Orgs</a> (organitzacions) per gestionar l'accés a paquets públics o privats.</p>
 
-            <p>El&nbsp;<a href="https://docs.npmjs.com/cli/npm">CLI</a>&nbsp;s’executa des d’un terminal i és com la majoria dels desenvolupadors interactuen amb npm.</p>
+            <p>El <a href="https://docs.npmjs.com/cli/npm">CLI</a> s’executa des d’un terminal i és com la majoria dels desenvolupadors interactuen amb npm.</p>
 
-            <p>El&nbsp;<a href="https://docs.npmjs.com/misc/registry">registre</a>&nbsp;és una gran base de dades pública de programari JavaScript i la metainformació que l'envolta.</p>
+            <p>El <a href="https://docs.npmjs.com/misc/registry">registre</a> és una gran base de dades pública de programari JavaScript i la metainformació que l'envolta.</p>
 
-            <h3 id="use-npm-to---">Utilitzeu npm per.&nbsp;.&nbsp;.</h3>
+            <h3 id="use-npm-to---">Utilitzeu npm per. . .</h3>
 
             <ul>
                 <li>Adapta els paquets de codi per a les teves aplicacions o incorpora paquets tal com són.</li>
                 <li>Descarregueu eines autònomes que podeu utilitzar immediatament.</li>
-                <li>Executeu paquets sense descarregar-vos amb&nbsp;<a href="https://www.npmjs.com/package/npx">npx</a>&nbsp;.</li>
+                <li>Executeu paquets sense descarregar-vos amb <a href="https://www.npmjs.com/package/npx">npx</a> .</li>
                 <li>Compartiu codi amb qualsevol usuari de npm, a qualsevol lloc.</li>
                 <li>Restringiu el codi a desenvolupadors específics.</li>
                 <li>Creeu Orgs (organitzacions) per coordinar el manteniment, codificació i desenvolupadors de paquets.</li>
@@ -83,31 +95,44 @@
 
             <h3 id="getting-started">Començant</h3>
 
-            <p>Per començar amb npm, podeu&nbsp;<a href="https://www.npmjs.com/signup">crear un compte</a>&nbsp;, que estarà disponible a http://www.npmjs.com/~ el&nbsp;vostre nom d'usuari&nbsp;.</p>
+            <p>Per començar amb npm, podeu <a href="https://www.npmjs.com/signup">crear un compte</a> , que estarà disponible a http://www.npmjs.com/~ el vostre nom d'usuari .</p>
 
-            <p>Després de configurar un compte npm, el següent pas és utilitzar la interfície de línia d’ordres (CLI) per&nbsp;<a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">instal·lar npm</a>&nbsp;.&nbsp;Esperem veure què crees!</p>
+            <p>Després de configurar un compte npm, el següent pas és utilitzar la interfície de línia d’ordres (CLI) per <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">instal·lar npm</a> . Esperem veure què crees!</p>
 
             <h3 id="sharing-packages-and-collaborating-with-others">Compartir paquets i col·laborar amb altres</h3>
 
-            <p>Si trieu compartir els vostres paquets públicament, no hi ha cap cost.&nbsp;Per utilitzar i compartir paquets privats, heu d’actualitzar el vostre compte.&nbsp;Per compartir-ho amb altres, creeu organitzacions, anomenades&nbsp;<a href="https://docs.npmjs.com/orgs">npm Orgs</a>&nbsp;, i convideu a altres a treballar amb vosaltres, de forma privada (de pagament) o públicament (de forma gratuïta).&nbsp;O podeu registrar-vos en una instància privada de npm per a la vostra empresa, anomenada&nbsp;<a href="https://npmjs.com/enterprise">npm Enterprise</a>&nbsp;, de manera que podeu desenvolupar paquets internament que no es comparteixen públicament.</p>
+            <p>Si trieu compartir els vostres paquets públicament, no hi ha cap cost. Per utilitzar i compartir paquets privats, heu d’actualitzar el vostre compte. Per compartir-ho amb altres, creeu organitzacions, anomenades <a href="https://docs.npmjs.com/orgs">npm Orgs</a> , i convideu a altres a treballar amb vosaltres, de forma privada (de pagament) o públicament (de forma gratuïta). O podeu registrar-vos en una instància privada de npm per a la vostra empresa, anomenada <a href="https://npmjs.com/enterprise">npm Enterprise</a> , de manera que podeu desenvolupar paquets internament que no es comparteixen públicament.</p>
 
             <h3 id="learn-more">Aprèn més</h3>
 
-            <p>Per obtenir més informació sobre npm com a producte, noves funcions i usos interessants de npm, inscriviu-vos al nostre butlletí al&nbsp;<a href="https://www.npmjs.com/npm-weekly">npm-setmanal</a>&nbsp;i assegureu-vos de seguir&nbsp;<a href="https://twitter.com/npmjs">@npmjs</a>&nbsp;a Twitter.</p>
+            <p>Per obtenir més informació sobre npm com a producte, noves funcions i usos interessants de npm, inscriviu-vos al nostre butlletí al <a href="https://www.npmjs.com/npm-weekly">npm-setmanal</a> i assegureu-vos de seguir <a href="https://twitter.com/npmjs">@npmjs</a> a Twitter.</p>
 
-            <p>Per a tutories, tutorials i aprenentatge, visiteu&nbsp;<a href="https://nodeschool.io/">l'escola de nodes</a>&nbsp;.&nbsp;Penseu en assistir o acollir un esdeveniment nodeschool (normalment gratuït!) En un lloc proper o bé, o bé utilitzeu les eines d’autoajuda que podeu trobar al lloc.</p>
+            <p>Per a tutories, tutorials i aprenentatge, visiteu <a href="https://nodeschool.io/">l'escola de nodes</a> . Penseu en assistir o acollir un esdeveniment nodeschool (normalment gratuït!) En un lloc proper o bé, o bé utilitzeu les eines d’autoajuda que podeu trobar al lloc.</p>
 
             <h4 id="cli-reference-documentation">Documentació de referència CLI</h4>
 
-            <p>Si bé les ordres CLI rellevants estan incloses en tota la documentació d'usuari, la CLI inclou ajuda en línia d'ordres,&nbsp;<a href="https://docs.npmjs.com/cli-documentation">secció de documentació</a>&nbsp;pròpia&nbsp;<a href="https://docs.npmjs.com/cli-documentation">i ajuda instantània (pàgines manual)</a>&nbsp;.</p>
+            <p>Si bé les ordres CLI rellevants estan incloses en tota la documentació d'usuari, la CLI inclou ajuda en línia d'ordres, <a href="https://docs.npmjs.com/cli-documentation">secció de documentació</a> pròpia <a href="https://docs.npmjs.com/cli-documentation">i ajuda instantània (pàgines manual)</a> .</p>
 
         </section>
       </div>
-<footer>
-  <div class="container">
-    <p id="javascript"></p>
-  </div>
-</footer>
+      <footer>
+        <div class="container">
+          <div class="row">
+          <div class="col- col-md-6 col-sm-4">
+            <h1>Eines HTML i CSS</h1>
+          </div>
+          <div class="autor col- col-md-6 col-sm-8 row">
+            <div class="col- col-md-4 col-sm-5"><img class="protagonista" src="./assets/images/Oscar.jpg"></div>
+            <div class="col- col-md-8 col-sm-7">
+              <p><strong>Oscar Cortés</strong></p>
+              <p>Eines HTML i CSS</p>
+              <p>Màster Universitari en Desenvolupament de llocs i aplicacions web - UOC</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </footer> 
+      
 
 <script src="./assets/scripts/index.js"></script>
 </body>

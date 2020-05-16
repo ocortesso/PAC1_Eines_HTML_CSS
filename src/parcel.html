@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Pac1 - Eines HTML i CSS</title>
+<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="./assets/styles/main.scss">
 </head>
 <body>
@@ -13,7 +15,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="./index.html">
-      <img src="./assets/images/Logo_blau_uoc.png" class="logo" alt="Logo UOC"></a> 
+      <img src="./assets/images/Logo.svg" class="logo" alt="Logo PAC"><span>Eines HTML i CSS</span></a> 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,7 +36,6 @@
   </nav> 
   </header>
       <div class="container principal"> 
-        <h1>Eines HTML i CSS</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home"></i></a></li>
@@ -42,9 +43,21 @@
               <li class="breadcrumb-item active" aria-current="page">Parcel</li>
             </ol>
           </nav>
-        <h2>Parcel</h2>
+        <div class="portada">
+          <picture>
+            <source media="(max-width: 25em)"
+                    srcset="./assets/images/portada-parcel-mobil.jpg">
+          
+            <source media="(max-width: 48em)"
+                    srcset="./assets/images/portada-parcel-ipad.jpg">
+          
+            <img src="./assets/images/portada-parcel.jpg"
+                alt="Portada CSS">
+          
+          </picture>
+        </div>
         <section>
-            <p>Parcel és un agrupador d'aplicacions web diferenciat per la seva experiència de desenvolupador.&nbsp;Ofereix un rendiment ràpid i intens que utilitza processament multicorre i requereix una configuració zero.</p>
+            <p>Parcel és un agrupador d'aplicacions web diferenciat per la seva experiència de desenvolupador. Ofereix un rendiment ràpid i intens que utilitza processament multicorre i requereix una configuració zero.</p>
             <div class="videoWrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/DYZTFooDB24" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -63,7 +76,7 @@
                 </code>
             </pre>
             
-            <p>El paquet pot prendre qualsevol tipus de fitxer com a punt d’entrada, però un fitxer HTML o JavaScript és un bon lloc per començar.&nbsp;Si enllaceu el fitxer principal de JavaScript al codi HTML mitjançant un camí d'accés relatiu, Parcel també el processarà i substituïu la referència per un URL al fitxer de sortida.</p>
+            <p>El paquet pot prendre qualsevol tipus de fitxer com a punt d’entrada, però un fitxer HTML o JavaScript és un bon lloc per començar. Si enllaceu el fitxer principal de JavaScript al codi HTML mitjançant un camí d'accés relatiu, Parcel també el processarà i substituïu la referència per un URL al fitxer de sortida.</p>
             
             <p>A continuació, creeu un fitxer index.html i index.js.</p>
             
@@ -77,7 +90,7 @@
                 </code>
             </pre>
                         
-            <p>NB: El paquet converteix els actius JS en ES5, que no s'executaran en el context d'una&nbsp;&lt;script type="module"&gt;etiqueta, de manera que només cal que utilitzeu&nbsp;&lt;script&gt;etiquetes&nbsp;simples&nbsp;sense&nbsp;typeatributs al codi HTML de la vostra font.</p>
+            <p>NB: El paquet converteix els actius JS en ES5, que no s'executaran en el context d'una &lt;script type="module"&gt;etiqueta, de manera que només cal que utilitzeu &lt;script&gt;etiquetes simples sense typeatributs al codi HTML de la vostra font.</p>
             
             <pre>
                 <code>
@@ -85,7 +98,7 @@
                 </code>
             </pre>
             
-            <p>Parcel té un servidor de desenvolupament integrat, que reconstruirà automàticament l’aplicació a mesura que canvieu d’arxius i admet la&nbsp;<a href="https://en.parceljs.org/hmr.html">substitució de mòduls en calent</a>&nbsp;per a un desenvolupament ràpid.&nbsp;Apunteu-lo al fitxer d’entrada:</p>
+            <p>Parcel té un servidor de desenvolupament integrat, que reconstruirà automàticament l’aplicació a mesura que canvieu d’arxius i admet la <a href="https://en.parceljs.org/hmr.html">substitució de mòduls en calent</a> per a un desenvolupament ràpid. Apunteu-lo al fitxer d’entrada:</p>
             
             <pre>
                 <code>
@@ -93,9 +106,9 @@
                 </code>
             </pre>
             
-            <p>Ara obriu&nbsp;<a href="http://localhost:1234/">http: // localhost: 1234 /</a>&nbsp;al vostre navegador.&nbsp;Si la substitució del mòdul en calent no funciona, potser haureu de&nbsp;<a href="https://en.parceljs.org/hmr.html#safe-write">configurar l’editor</a>&nbsp;.&nbsp;També podeu substituir el port predeterminat amb l'&nbsp;-p &lt;port number&gt;opció.</p>
+            <p>Ara obriu <a href="http://localhost:1234/">http: // localhost: 1234 /</a> al vostre navegador. Si la substitució del mòdul en calent no funciona, potser haureu de <a href="https://en.parceljs.org/hmr.html#safe-write">configurar l’editor</a> . També podeu substituir el port predeterminat amb l' -p &lt;port number&gt;opció.</p>
             
-            <p>Feu servir el servidor de desenvolupament quan no tingueu el vostre propi servidor o bé l'aplicació sigui completament client.&nbsp;Si teniu el vostre propi servidor, podeu executar Parcel en&nbsp;watchmode.&nbsp;Això encara es reconstrueix automàticament a mesura que els fitxers canvien i admet la substitució de mòduls en calent, però no inicia un servidor web.</p>
+            <p>Feu servir el servidor de desenvolupament quan no tingueu el vostre propi servidor o bé l'aplicació sigui completament client. Si teniu el vostre propi servidor, podeu executar Parcel en watchmode. Això encara es reconstrueix automàticament a mesura que els fitxers canvien i admet la substitució de mòduls en calent, però no inicia un servidor web.</p>
             
             <pre>
                 <code>
@@ -103,15 +116,28 @@
                 </code>
             </pre>
             
-            <p>També podeu utilitzar&nbsp;<a href="https://createapp.dev/parcel">createapp.dev</a>&nbsp;per crear un projecte Parcel al navegador.&nbsp;Seleccioneu les funcions que necessiteu, com ara Reactar, Vue, Typescript i CSS, i veureu que el projecte es genera en temps real.&nbsp;Podeu utilitzar aquesta eina per aprendre a configurar un nou projecte i també podeu descarregar el projecte com a fitxer ZIP i començar a codificar a l'instant.</p>
+            <p>També podeu utilitzar <a href="https://createapp.dev/parcel">createapp.dev</a> per crear un projecte Parcel al navegador. Seleccioneu les funcions que necessiteu, com ara Reactar, Vue, Typescript i CSS, i veureu que el projecte es genera en temps real. Podeu utilitzar aquesta eina per aprendre a configurar un nou projecte i també podeu descarregar el projecte com a fitxer ZIP i començar a codificar a l'instant.</p>
             
         </section>
       </div>
-<footer>
-  <div class="container">
-    <p id="javascript"></p>
-  </div>
-</footer>
+      <footer>
+        <div class="container">
+          <div class="row">
+          <div class="col- col-md-6 col-sm-4">
+            <h1>Eines HTML i CSS</h1>
+          </div>
+          <div class="autor col- col-md-6 col-sm-8 row">
+            <div class="col- col-md-4 col-sm-5"><img class="protagonista" src="./assets/images/Oscar.jpg"></div>
+            <div class="col- col-md-8 col-sm-7">
+              <p><strong>Oscar Cortés</strong></p>
+              <p>Eines HTML i CSS</p>
+              <p>Màster Universitari en Desenvolupament de llocs i aplicacions web - UOC</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </footer> 
+      
 
 <script src="./assets/scripts/index.js"></script>
 </body>

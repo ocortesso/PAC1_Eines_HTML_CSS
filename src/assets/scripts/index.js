@@ -1,6 +1,7 @@
 import 'bootstrap';
 
 console.log(`Benvingut a la PAC1!`);
+/*
 window.addEventListener("load", function() {
     var navegador = "";
     // CHROME
@@ -37,3 +38,4 @@ window.addEventListener("load", function() {
     }
     document.getElementById("javascript").innerHTML ="Ens visites amb " + navegador;
   });
+*/

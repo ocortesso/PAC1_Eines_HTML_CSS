@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Pac1 - Eines HTML i CSS</title>
+<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="./assets/styles/main.scss">
 </head>
 <body>
@@ -13,7 +15,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="./index.html">
-      <img src="./assets/images/Logo_blau_uoc.png" class="logo" alt="Logo UOC"></a> 
+      <img src="./assets/images/Logo.svg" class="logo" alt="Logo PAC"><span>Eines HTML i CSS</span></a> 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,33 +36,43 @@
   </nav> 
   </header>
       <div class="container principal"> 
-
-        <h1>Eines HTML i CSS</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home"></i></a></li>
               <li class="breadcrumb-item"><a href="./front-end-languages.html">Llenguatges Front-end</a></li>
-              <li class="breadcrumb-item active" aria-current="page">HTML</li>
+              <li class="breadcrumb-item active" aria-current="page">HTML, Hyper Text Markup Language</li>
             </ol>
           </nav>
-        <h2>HTML, Hyper Text Markup Language</h2>
+        <div class="portada">
+          <picture>
+            <source media="(max-width: 25em)"
+                    srcset="./assets/images/portada-html-mobil.jpg">
+          
+            <source media="(max-width: 48em)"
+                    srcset="./assets/images/portada-html-ipad.jpg">
+          
+            <img src="./assets/images/portada-html.jpg"
+                alt="Portada CSS">
+          
+          </picture>
+        </div>
         <section>
             <p><b>HTML</b> (acrònim d’<i>Hyper Text Markup Language</i>, en català, "llenguatge de marcat d'hipertext"), és un <a href="/wiki/Llenguatge_de_marcat" class="mw-redirect" title="Llenguatge de marcat">llenguatge de marcat</a> que deriva de l'<a href="/wiki/Standard_Generalized_Markup_Language" title="Standard Generalized Markup Language">SGML</a> dissenyat per estructurar textos i relacionar-los en forma d'<a href="/wiki/Hipertext" title="Hipertext">hipertext</a>. Gràcies a <a href="/wiki/Internet" title="Internet">Internet</a> i als <a href="/wiki/Navegador_web" title="Navegador web">navegadors web</a>, s'ha convertit en un dels formats més populars que existeixen per a la construcció de documents per a la web.
             </p>
-            <p>El llenguatge HTML pot ser creat i editat amb qualsevol&nbsp;<a href="https://ca.wikipedia.org/wiki/Editor_de_text" title="Editor de text">editor de text</a>&nbsp;bàsic, com pot ser&nbsp;<a href="https://ca.wikipedia.org/wiki/Gedit" title="Gedit">Gedit</a>&nbsp;en&nbsp;<a href="https://ca.wikipedia.org/wiki/GNU/Linux" title="GNU/Linux">GNU/Linux</a>, el&nbsp;<a href="https://ca.wikipedia.org/wiki/Bloc_de_notes" title="Bloc de notes">Bloc de notes</a>&nbsp;de Windows, o qualsevol altre editor que admeti text sense format com&nbsp;<a href="https://ca.wikipedia.org/wiki/GNU_Emacs" title="GNU Emacs">GNU Emacs</a>,&nbsp;<a href="https://ca.wikipedia.org/w/index.php?title=Wordpad&amp;action=edit&amp;redlink=1" title="Wordpad (encara no existeix)">Microsoft Wordpad</a>,&nbsp;<a href="https://ca.wikipedia.org/w/index.php?title=TextPad&amp;action=edit&amp;redlink=1" title="TextPad (encara no existeix)">TextPad</a>,&nbsp;<a href="https://ca.wikipedia.org/wiki/Vim" title="Vim">Vim</a>,&nbsp;<a href="https://ca.wikipedia.org/w/index.php?title=Notepad_%2B%2B&amp;action=edit&amp;redlink=1" title="Notepad ++ (encara no existeix)">Notepad ++</a>, entre d'altres.</p>
-
-            <p>Existeixen, a més, altres editors per a la realització de llocs web amb característiques&nbsp;<a href="https://ca.wikipedia.org/wiki/WYSIWYG" title="WYSIWYG">WYSIWYG</a>&nbsp;(What You See Is What You Get, o en català: «el que veus és el que obtens»). Aquests editors permeten veure el resultat del que s'està editant en temps real, a mesura que es va desenvolupant el document. Ara bé, això no significa una forma diferent de fer llocs web, sinó que és una forma una mica més simple, ja que aquests programes, a més de tenir l'opció de treballar amb vista preliminar, tenen la seva pròpia secció HTML, la qual va generant tot el codi a mesura que es treballa. Alguns exemples d'editors WYSIWYG són&nbsp;<a href="https://ca.wikipedia.org/wiki/KompoZer" title="KompoZer">KompoZer</a>,&nbsp;<a href="https://ca.wikipedia.org/wiki/Microsoft_FrontPage" title="Microsoft FrontPage">Microsoft FrontPage</a>&nbsp;o&nbsp;<a href="https://ca.wikipedia.org/wiki/Adobe_Dreamweaver" title="Adobe Dreamweaver">Adobe Dreamweaver</a>.</p>
+            <p>El llenguatge HTML pot ser creat i editat amb qualsevol <a href="https://ca.wikipedia.org/wiki/Editor_de_text" title="Editor de text">editor de text</a> bàsic, com pot ser <a href="https://ca.wikipedia.org/wiki/Gedit" title="Gedit">Gedit</a> en <a href="https://ca.wikipedia.org/wiki/GNU/Linux" title="GNU/Linux">GNU/Linux</a>, el <a href="https://ca.wikipedia.org/wiki/Bloc_de_notes" title="Bloc de notes">Bloc de notes</a> de Windows, o qualsevol altre editor que admeti text sense format com <a href="https://ca.wikipedia.org/wiki/GNU_Emacs" title="GNU Emacs">GNU Emacs</a>, <a href="https://ca.wikipedia.org/w/index.php?title=Wordpad&amp;action=edit&amp;redlink=1" title="Wordpad (encara no existeix)">Microsoft Wordpad</a>, <a href="https://ca.wikipedia.org/w/index.php?title=TextPad&amp;action=edit&amp;redlink=1" title="TextPad (encara no existeix)">TextPad</a>, <a href="https://ca.wikipedia.org/wiki/Vim" title="Vim">Vim</a>, <a href="https://ca.wikipedia.org/w/index.php?title=Notepad_%2B%2B&amp;action=edit&amp;redlink=1" title="Notepad ++ (encara no existeix)">Notepad ++</a>, entre d'altres.</p>
+            
+            <p><img src="./assets/images/html.gif" style="float: right;width: 50%;margin: 1em;" alt="Gif de html">Existeixen, a més, altres editors per a la realització de llocs web amb característiques <a href="https://ca.wikipedia.org/wiki/WYSIWYG" title="WYSIWYG">WYSIWYG</a> (What You See Is What You Get, o en català: «el que veus és el que obtens»). Aquests editors permeten veure el resultat del que s'està editant en temps real, a mesura que es va desenvolupant el document. Ara bé, això no significa una forma diferent de fer llocs web, sinó que és una forma una mica més simple, ja que aquests programes, a més de tenir l'opció de treballar amb vista preliminar, tenen la seva pròpia secció HTML, la qual va generant tot el codi a mesura que es treballa. Alguns exemples d'editors WYSIWYG són <a href="https://ca.wikipedia.org/wiki/KompoZer" title="KompoZer">KompoZer</a>, <a href="https://ca.wikipedia.org/wiki/Microsoft_FrontPage" title="Microsoft FrontPage">Microsoft FrontPage</a> o <a href="https://ca.wikipedia.org/wiki/Adobe_Dreamweaver" title="Adobe Dreamweaver">Adobe Dreamweaver</a>.</p>
 
             <p>Combinar aquests dos mètodes resulta molt interessant, ja que es complementen entre si. Per exemple, si s'edita tot en HTML i el desenvolupador oblida algun codi o etiqueta, només cal dirigir-se a l'editor visual o WYSIWYG i es continua aquí l'edició o viceversa, ja que hi ha casos en què resulta més ràpid i fàcil escriure directament el codi d'alguna característica que l'usuari vol afegir al lloc que buscar l'opció en el programa mateix.</p>
 
-            <p>Hi ha un altre tipus d'editors HTML anomenats&nbsp;<a href="https://ca.wikipedia.org/wiki/WYSIWYM" title="WYSIWYM">WYSIWYM</a>&nbsp;que donen més importància al contingut i al significat que a l'aparença visual. Entre els objectius que tenen aquests editors és la separació del contingut i la presentació, fonamental en el disseny web.</p>
+            <p>Hi ha un altre tipus d'editors HTML anomenats <a href="https://ca.wikipedia.org/wiki/WYSIWYM" title="WYSIWYM">WYSIWYM</a> que donen més importància al contingut i al significat que a l'aparença visual. Entre els objectius que tenen aquests editors és la separació del contingut i la presentació, fonamental en el disseny web.</p>
 
-            <p>HTML utilitza etiquetes o marques, que consisteixen en breus instruccions de començament i final, mitjançant les quals es determina la forma en què ha d'aparèixer al seu&nbsp;<a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador</a>&nbsp;el text, així com les imatges i els altres elements.</p>
+            <p>HTML utilitza etiquetes o marques, que consisteixen en breus instruccions de començament i final, mitjançant les quals es determina la forma en què ha d'aparèixer al seu <a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador</a> el text, així com les imatges i els altres elements.</p>
 
             <p>Tota etiqueta HTML està tancada entre els signes menor que i major que (&lt;&gt;), i algunes tenen atributs que poden prendre algun valor. En general les etiquetes s'aplicaran de dues formes especials:</p>
             <ul>
-                <li>Obrint-se i tancant-se, com ara: &lt;b&gt; negreta &lt;/b&gt; , que es veuria al seu&nbsp;<a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador web</a>&nbsp;com&nbsp;negreta.</li>
-                <li>Sense obrir-se i tancar-se, com &lt;hr/&gt; , que es veuria al seu&nbsp;<a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador web</a>&nbsp;com una línia horitzontal.</li>
+                <li>Obrint-se i tancant-se, com ara: &lt;b&gt; negreta &lt;/b&gt; , que es veuria al seu <a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador web</a> com negreta.</li>
+                <li>Sense obrir-se i tancar-se, com &lt;hr/&gt; , que es veuria al seu <a href="https://ca.wikipedia.org/wiki/Navegador_web" title="Navegador web">navegador web</a> com una línia horitzontal.</li>
             </ul>
 
             <p>Les etiquetes bàsiques o mínimes que conformen un document HTML són:</p>
@@ -68,23 +80,35 @@
                 <code>
                     1 &lt;! DOCTYPE HTML&gt;
                     2 &lt;html&gt;
-                    3 &nbsp;&nbsp;&lt;head&gt;
-                    4 &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset = "utf-8" /&gt;
-                    5 &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; Exemple 1 &lt;/title&gt;
-                    6 &nbsp;&nbsp;&lt;/head&gt;
-                    7 &nbsp;&nbsp;&lt;Body&gt;
-                    8 &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Paràgraf d'exemple &lt;/p&gt;
-                    9 &nbsp;&nbsp;&lt;/body&gt;
+                    3   &lt;head&gt;
+                    4     &lt;meta charset = "utf-8" /&gt;
+                    5     &lt;title&gt; Exemple 1 &lt;/title&gt;
+                    6   &lt;/head&gt;
+                    7   &lt;Body&gt;
+                    8     &lt;p&gt; Paràgraf d'exemple &lt;/p&gt;
+                    9   &lt;/body&gt;
                     10 &lt;/html&gt;
                 </code>
             </pre>
         </section>
       </div>
-<footer>
-  <div class="container">
-    <p id="javascript"></p>
-  </div>
-</footer>
+      <footer>
+        <div class="container">
+          <div class="row">
+          <div class="col- col-md-6 col-sm-4">
+            <h1>Eines HTML i CSS</h1>
+          </div>
+          <div class="autor col- col-md-6 col-sm-8 row">
+            <div class="col- col-md-4 col-sm-5"><img class="protagonista" src="./assets/images/Oscar.jpg"></div>
+            <div class="col- col-md-8 col-sm-7">
+              <p><strong>Oscar Cortés</strong></p>
+              <p>Eines HTML i CSS</p>
+              <p>Màster Universitari en Desenvolupament de llocs i aplicacions web - UOC</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </footer> 
 
 <script src="./assets/scripts/index.js"></script>
 </body>
