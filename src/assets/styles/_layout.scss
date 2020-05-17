@@ -104,11 +104,9 @@ pre {
 }
 /*Animació titolets*/
 
-.card:hover .card-title {
-    -webkit-animation-name: moviment;
-    animation-name: moviment;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+.moviment {
+    -webkit-animation: moviment 1s infinite;
+    animation: moviment 1s infinite;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     }
@@ -200,82 +198,58 @@ pre {
     }
     } 
 footer:hover .protagonista {
-    -webkit-animation-name: rotateIn;
-    animation-name: rotateIn;
+    -webkit-animation-name: rotacio;
+    animation-name: rotacio;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     }
-    @-webkit-keyframes rotateIn {
+    @-webkit-keyframes rotacio {
     0% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
     }
     100% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: none;
     transform: none;
-    opacity: 1;
     }
     }
-    @keyframes rotateIn {
+    @keyframes rotacio {
     0% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
     }
     100% {
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transform: none;
     transform: none;
-    opacity: 1;
     }
     }
 
 footer:hover h1 {
-    -webkit-animation-name: moviment-titol-peu;
-    animation-name: moviment-titol-peu;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    }
-    @-webkit-keyframes moviment-titol-peu {
-    0%, 100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-    }
-    20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-    }
-    }
-    @keyframes moviment-titol-peu {
-    0%, 100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-    }
-    20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-    }
-    } 
+	-webkit-animation: lletres 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: lletres 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes lletres {
+  0% {
+    letter-spacing: -0.5em;
+  }
+}
+@keyframes lletres {
+  0% {
+    letter-spacing: -0.5em;
+  }
+}
+ 
       
 @media (max-width:480px) {
     .navbar-brand span {
